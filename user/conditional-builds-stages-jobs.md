@@ -45,7 +45,7 @@ stages:
     if: type IN (push, pull_request)
 ```
 
-Jobs need to be listed explicitely, i.e. using `jobs.include` or `matrix.include` (alias), in order to specify conditions for them. Jobs created via [matrix expansion](/user/customizing-the-build/#Build-Matrix) currently cannot have conditions.
+Jobs need to be listed explicitly, i.e. using `jobs.include` or `matrix.include` (alias), in order to specify conditions for them. Jobs created via [matrix expansion](/user/customizing-the-build/#Build-Matrix) currently cannot have conditions.
 
 At the moment, stages that are found to be excluded will be skipped silently (an improvement to this is on the roadmap).
 
